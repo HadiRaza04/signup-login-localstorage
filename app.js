@@ -2,15 +2,12 @@ let users = [];
  (() => {
     let item = localStorage.getItem('users');
     if (item) users = JSON.parse(item);
-    
     let loggedInUser = localStorage.getItem("loggedInUser")
             if (loggedInUser) {
                 window.location.href = "./dashboard.html";
                 return;
             } 
-
  })();
-
 function submitForm(e) {
     e.preventDefault();
     let firstName = document.querySelector("#firstName").value;
@@ -30,8 +27,6 @@ function submitForm(e) {
         document.querySelector("#error").innerText = "Passwords do not match";
         return;
     }
-
-
     let newUser = {
         firstName,
         lastName,
