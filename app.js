@@ -3,6 +3,11 @@ let users = [];
     let item = localStorage.getItem('users');
     if (item) users = JSON.parse(item);
     
+    let loggedInUser = localStorage.getItem("loggedInUser")
+            if (loggedInUser) {
+                window.location.href = "./dashboard.html";
+                return;
+            } 
 
  })();
 
