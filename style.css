@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: rgb(0, 155, 47); */
+}
+.container {
+    background-color: aqua;
+    width: 450px;
+    height: 550px;
+    margin-left: 30%;
+    margin-top: 5%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* text-align: center; */
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+form input, select {
+    margin-bottom: 10px;
+    margin-left: 50px;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+button {
+    padding: 12px;
+    border-radius: 5px;
+    width: 80px;
+    /* position: fixed; */
+    align-items: right;
+}
+#error {
+    color: red;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>SignUp</h2>
+        <form onsubmit="submitForm(event)">
+            First Name:
+            <input type="text" id="firstName" placeholder="First Name" required><br>
+            Last Name:
+            <input type="text" id="lastName" placeholder="Last Name" required><br>
+            Gender:
+            <select name="gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+            Email:
+            <input type="email" id="email" placeholder="Email" required><br>
+            Password:
+            <input type="password" id="password" placeholder="Password" min="6" required><br>
+            Confirm Password:
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" min="6" required>
+            <button type="submit">SignUp</button>
+        </form>
+        <br>
+        <p>Already have an account. <a href="./login.html">LogIn</a></p>
+        <p id="error"></p>
+        <p id="result"></p>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
